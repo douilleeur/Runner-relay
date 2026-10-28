@@ -1,0 +1,14 @@
+{
+  "name": "runner-relay",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Serveur relais WebSocket du jeu Runner (Cloudflare Workers + Durable Objects)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node test/relay.test.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

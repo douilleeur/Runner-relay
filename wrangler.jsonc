@@ -1,0 +1,14 @@
+{
+  "name": "runner-relay",
+  "main": "src/index.js",
+  "compatibility_date": "2025-10-01",
+  "durable_objects": {
+    "bindings": [{ "name": "ROOMS", "class_name": "Room" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Room"] }],
+  "vars": {
+    // Laisse vide pour accepter toutes les origines, ou mets l'adresse de ton jeu
+    // (ex. "https://mon-jeu.vercel.app"). Plusieurs adresses : sépare par des virgules.
+    "ALLOWED_ORIGINS": ""
+  }
+}
